@@ -1,0 +1,1 @@
+package com.duapps.affair.demo.redLock;/** * @Author he.zhou * @Date 2021-04-12 */public interface AquiredLockWorker<T> {    T invokeAfterLockAquire() throws Exception;}

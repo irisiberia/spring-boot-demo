@@ -1,0 +1,1 @@
+package com.duapps.affair.demo.bean;import lombok.AllArgsConstructor;import lombok.Builder;import lombok.Data;import lombok.NoArgsConstructor;/** * @Author he.zhou * @Date 2020-12-05 */@Data@Builder@NoArgsConstructor@AllArgsConstructorpublic class OrderRequest extends PageRequest {    private Integer consumptionStat;}

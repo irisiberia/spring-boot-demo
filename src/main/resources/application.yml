@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.48.0.191:3306/recorder-cn-tewst?autoReconnect=true&useUnicode=true&charset=utf8mb4
+    username: recorder-cn
+    password: recorder-cn-123
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: true
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: UTC
+
+  redis:
+    cluster:
+      nodes: 10.29.10.14:8700
+
+  elasticsearch:
+    rest:
+      uris: a850bf847ffae4396a34ba1fa08d9844-157760511.ap-southeast-1.elb.amazonaws.com:9200
+      username: elastic
+      password: elastic
+
+server:
+  http2:
+    enabled: true

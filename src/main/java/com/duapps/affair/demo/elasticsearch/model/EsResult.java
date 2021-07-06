@@ -1,0 +1,1 @@
+package com.duapps.affair.demo.elasticsearch.model;import lombok.AllArgsConstructor;import lombok.Data;/** * @Author he.zhou * @Date 2020-08-25 */@Data@AllArgsConstructorpublic class EsResult<T> {    private long totalCount;    private T data;    public static <T> EsResult<T> of(T data, long totalHits) {        return new EsResult<>(totalHits, data);    }}

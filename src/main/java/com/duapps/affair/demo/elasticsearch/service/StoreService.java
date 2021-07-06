@@ -1,0 +1,1 @@
+package com.duapps.affair.demo.elasticsearch.service;import com.duapps.affair.demo.elasticsearch.model.StoreDocument;import java.util.List;/** * @Author he.zhou * @Date 2020-08-25 */public interface StoreService {    Long saveStore(StoreDocument storeDocument);    List<StoreDocument> searchStore(Integer pageNumber, Integer pageSize, String searchContent);}

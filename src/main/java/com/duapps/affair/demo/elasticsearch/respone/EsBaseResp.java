@@ -1,0 +1,1 @@
+package com.duapps.affair.demo.elasticsearch.respone;/** * @Author he.zhou * @Date 2020-08-25 */public class EsBaseResp {}

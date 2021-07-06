@@ -1,0 +1,1 @@
+package com.duapps.affair.demo.elasticsearch.dao;import com.duapps.affair.demo.elasticsearch.model.StoreDocument;import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;/** * @Author he.zhou * @Date 2020-08-25 */public interface StoreRepository extends ElasticsearchRepository<StoreDocument, Long> {}
