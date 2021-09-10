@@ -21,7 +21,7 @@ spring:
 
   elasticsearch:
     rest:
-      uris: a850bf847ffae4396a34ba1fa08d9844-157760511.ap-southeast-1.elb.amazonaws.com:9200
+      uris: internal-ad86a960929a041d1bc2f548a26ee1b5-2043565051.us-west-2.elb.amazonaws.com:9200
       username: elastic
       password: elastic
 
