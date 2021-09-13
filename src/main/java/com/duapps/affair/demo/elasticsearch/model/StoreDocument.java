@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import java.util.List;
 
@@ -19,19 +21,22 @@ import java.util.List;
 @Document(indexName = "store")
 @AllArgsConstructor
 @NoArgsConstructor
-public class StoreDocument extends EsBaseEntity{
+public class StoreDocument extends EsBaseEntity {
 
     @Id
     private Long id;
 
+    @Field(type = FieldType.Keyword)
     private String code;
     /**
      * 基础信息
      */
+    @Field(type = FieldType.Object)
     private StoreBaseInfo baseInfo;
     /**
      * 标签
      */
+    @Field(type = FieldType.Object)
     private List<StoreTags> tags;
 
 }

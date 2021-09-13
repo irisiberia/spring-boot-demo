@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import java.util.Date;
 
@@ -52,7 +54,7 @@ public class StoreBaseInfo {
     /**
      * 详细地址
      */
-
+    @Field(type = FieldType.Keyword)
     private String address;
 
     /**
