@@ -25,6 +25,12 @@ spring:
       username: elastic
       password: elastic
 
+#  elasticsearch:
+#    rest:
+#      uris: http://10.121.2.137:9200,http://10.121.2.153:9200,http://10.121.2.49:9200
+#      username: elastic
+#      password: doglobal
+
 server:
   http2:
     enabled: true
